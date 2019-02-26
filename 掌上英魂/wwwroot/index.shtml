@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>掌上英魂</title>
+<meta name="viewport" content="minimal-ui, width=750, user-scalable=0,  maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection"content="telephone=no, email=no" />
+<meta name="Description" content="《英魂之刃》是一款类DOTA的多人竞技网游，拥有无需下载，即点即玩，10秒开局，qq登录，精美画面，爽快体验等游戏特色和优势。进入游戏后，即可体验充满魔幻风格的游戏世界，领略原创英雄角色和强力技能，在还原三路5V5经典模式的同时，更创新单路决战之谷模式，出门即可10人团战，最快享受激情团战体验！并且还有一端双玩法全新RPG、PVE模式，与玩家一起打造巅峰战场。游戏入驻腾讯QQ游戏大厅后，更是人气飙升，是中国风第一DOTA网游">
+<meta name="Keywords" content="英魂之刃，英魂之刃官方网站，英魂之刃官网，DOTA页游，英魂，英魂之刃下载，微端下载，英魂之刃礼包，新手礼包，新英雄，活跃度，微信，龙骑士，绑定，英魂视频，比赛，周免，英魂之刃攻略，MOBA，即下即玩，无需注册，10秒加载,30秒开局，dota网页版，英雄出装，5v5,10v10，RPG,PVE，兑换码，中国风，魔幻，黄金十二宫，兑换码，天赋，LOL网页版，竞技游戏">
+<!-- <script src="http://news.cos.99.com/m/script/public.js"></script> -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--loading-->
+<div class="loading">
+  <div class="shape"></div>
+  <div class="shadow"></div>
+  <p class="loading-txt">加载中</p>
+</div>
+<!--/loading-->
+
+<!--第一屏-->
+<div class="page p1 hide">
+  <span class="slogan">英魂小知识</span>
+  <span class="tit-bg"></span>
+  <span class="star"></span>
+  <a href="javascript:;" class="answer-click-btn">点击答题</a>
+</div>
+<!--/第一屏-->
+<!--第二~六屏-->
+<div id="box">   
+</div>
+<!--/第二~六屏-->
+<div class="page result-page p7 hide">
+  <div class="result-tit">
+    <span class="result-tit-detail">加载中...</span>
+    <img src=""/>
+    <span class="star"></span>
+  </div>
+   <p>加载中...</p>
+   <a href="javascript:;" class="show-off-btn">炫耀一下</a>
+   <a href="" class="one-more-btn">再来一次</a>
+</div>
+<!--弹窗-->
+<div class="pop-box hide">
+  <div class="pop">
+     <span class="eye pos-eye-left"></span>
+     <span class="eye pos-eye-right"></span>
+     <p>你考虑好了吗？</p>
+     <a href="javascript:;" class="think-again-btn">我再想想</a>
+     <a href="javascript:;" class="confirm-btn">确定交卷</a>
+  </div>
+</div>
+<!--/弹窗-->
+<!--炫耀一下（微信）弹窗-->
+<div class="share-box hide">
+     <span>点击右上角按钮进行分享</span>
+</div>
+<!--/炫耀一下（微信）弹窗-->
+</div>
+<script type="text/javascript" charset="utf-8" src="js/zepto.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+<!--分享配置-->
+<!-- <script type="text/javascript" src="http://wx.99.com/wxshare.html?sys=10&v=1.2"></script>  -->
+<script type="text/javascript" charset="utf-8" src="js/yhSmallKnowlwdge.js"></script>
+<!--盒子统计代码-->
+<!-- <div style="display:none">
+    <script type="text/javascript">boxPings();</script>
+</div> -->
+<!--/盒子统计代码-->
+<!--统计代码-->
+<!-- <div style="display:none">
+    <script type="text/javascript">pings();</script>
+</div> -->
+<!--/统计代码-->
+
+</body>
+</html>
