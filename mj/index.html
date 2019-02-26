@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>新年摸鸡摸吉祥</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="minimal-ui,target-densitydpi=device-dpi, width=750, user-scalable=0"/>
+    <!--, maximum-scale=1.0, minimum-scale=1.0-->
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes"/>
+    <meta name="browsermode" content="application"/>
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="x5-page-mode" content="app"/>
+    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+   
+</head>
+
+<body>
+<audio src="music/bgm.mp3" id="music-bgm" class="media-audio" autoplay preload loop></audio>
+<audio src="music/btn.mp3" id="music-btn" class="media-audio" preload></audio>
+<audio src="music/start.ogg" id="music-start" class="media-audio" preload></audio>
+<audio src="music/chick0.mp3" id="music-chick0" class="media-audio" preload></audio>
+<audio src="music/chick1.mp3" id="music-chick1" class="media-audio" preload></audio>
+<audio src="music/chick5.mp3" id="music-chick5" class="media-audio" preload></audio>
+<audio src="music/win.mp3" id="music-win" class="media-audio" preload></audio>
+<audio src="music/fail.mp3" id="music-fail" class="media-audio" preload></audio>
+<!-- loading -->
+<div class="loading">
+    <span></span>
+    <div><i></i></div>
+    <p><i></i></p>
+</div>
+<!-- /loading -->
+
+<!-- 第一屏 -->
+<div class="pageOne" style="display: none;">
+    <h2 id="slogan" class="in">摸鸡摸吉祥 从天降</h2>
+    <div class="lights"></div>
+    <div class="cloud"></div>
+    <div class="content">
+        <div class="door"></div>
+        <div class="chickOne">
+            <div class="eyes"></div>
+            <div class="wings"></div>
+        </div>
+        <!--<div class="words"></div>-->
+        <div class="chickTwo">
+            <div class="eyes"></div>
+        </div>
+        <div class="left-things"></div>
+        <div class="chickThree">
+            <div class="eyes"></div>
+        </div>
+        <div class="right-things"></div>
+        <a href="javascript:;" class="start-btn">伸出你的小红手</a>
+    </div>
+</div>
+<!-- /第一屏 -->
+<!-- 第二屏 -->
+<div class="pageTwo" style="display: none;">
+    <div class="score"><i></i><span>0</span></div>
+    <div class="time-count">15s</div>
+    <div class="egg egg1"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="egg egg2"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="egg egg3"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="egg egg4"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="egg egg5"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="egg egg6"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="egg egg7"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="egg egg8"><i></i><em></em><img src="img/page2-egg.png" alt=""></div>
+    <div class="mask"><i></i></div>
+    <div class="rule-box">
+        <img src="img/rule.jpg" alt="">
+        <a href="javascript:;" class="btn-start-game"></a>
+    </div>
+</div>
+<!-- /第二屏 -->
+<!-- 第三屏 -->
+<div class="pageThree" style="display: none;">
+   
+    <div class="game-fail">
+        <img src="img/page-fail.jpg" alt="">
+    </div>
+    <div class="game-win">
+        <div class="mask" style="display: block"></div>
+        <div class="info">
+            <p class="time-last">00:00</p>
+            <p class="chance-last">10</p>
+            <div class="txt-pao"><i>1380</i></div>
+        </div>
+        <a href="javascript:;" class="btn-try"></a>
+    </div>
+    <div class="last-page">
+        <div class="mask" style="display: block"></div>
+        <img class="share-tip" src="img/pop-share-tip.png" alt="">
+        <div class="info">
+            <p class="month">2</p>
+            <p class="day">19</p>
+        </div>
+        <div class="lunbo-wrapper">
+            <div class="lunbo">
+                <ul>
+                    <li>恭喜来自 龙腾虎跃 的XXXXX小哥获得 <span>270</span> 点赠品</li>
+                    <li>恭喜来自 龙腾虎跃 的XXXXX小哥获得 <span>270</span> 点赠品</li>
+                    <li>恭喜来自 龙腾虎跃 的XXXXX小哥获得 <span>270</span> 点赠品</li>
+                    <li>恭喜来自 龙腾虎跃 的XXXXX小哥获得 <span>270</span> 点赠品</li>
+                    <li>恭喜来自 龙腾虎跃 的XXXXX小哥获得 <span>270</span> 点赠品</li>
+                    <li>恭喜来自 龙腾虎跃 的XXXXX小哥获得 <span>270</span> 点赠品</li>
+                </ul>
+            </div>
+        </div>
+        <div class="btns-box">
+            <a href="javascript:;" class="btn-prizes"></a>
+            <a href="javascript:;" class="btn-share"></a>
+        </div>
+      <div class="pop-prizes">
+            <ul>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+                <li><span>2018.02.08</span><span>1380点赠品</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /第三屏 -->
+
+<a href="javascript:;" class="btn-music on"></a>
+
+<!-- 资源 -->
+<div class="imgResource">
+    <img src="img/page1-bottom-bg.png" alt="">
+    <img src="img/try-once.png" alt="">
+    <img src="img/last-page-info.png" alt="">
+    <img src="img/rule.jpg" alt="">
+    <img src="img/slogan.png" alt="">
+    <img src="img/page2-bg.jpg" alt="">
+    <img src="img/page3-bg.jpg" alt="">
+    <img src="img/page1-left-things.png" alt="">
+    <img src="img/page-fail.jpg" alt="">
+    <img src="img/page1-chick1.png" alt="">
+    <img src="img/pop-prizes.png" alt="">
+    <img src="img/page1-right-things.png" alt="">
+    <img src="img/lights.png" alt="">
+    <img src="img/img-qrcode.png" alt="">
+    <img src="img/page1-btn.png" alt="">
+    <img src="img/btn-prizes.png" alt="">
+    <img src="img/btn-draw.png" alt="">
+</div>
+<!-- /资源 -->
+
+
+<!-- 横屏处理 -->
+<div id="henping-mask"><p>请将手机调至竖屏状态，获得最佳浏览体验！</p></div>
+<!-- 横屏处理 end -->
+<script src="js/zepto.min.js"></script>
+<script src="js/preloadjs-0.6.2.min.js"></script>
+<script src="js/soundjs-0.6.2.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

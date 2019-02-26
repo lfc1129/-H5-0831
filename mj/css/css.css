@@ -1,0 +1,1617 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  zoom: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+img {
+  border: none;
+  vertical-align: middle; }
+
+em, i {
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+html {
+  font: 6.25%/1.5 "Lucida Grande", Helvetica, Arial, Verdana, "Microsoft YaHei", sans-serif;
+  color: #000;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none; }
+
+body {
+  margin: 0 auto;
+  background: #fff; }
+
+a {
+  color: #585858;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* 混合宏 */
+/* 变量 */
+/* 占位符 */
+/* 云朵动画 */
+@keyframes cloudMove {
+  0% {
+    transform: translateX(0); }
+
+  100% {
+    transform: translateX(300px); } }
+
+@-webkit-keyframes cloudMove {
+  0% {
+    -webkit-transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(300px); } }
+
+/* 光线动画 */
+@keyframes lightsRound {
+  0% {
+    transform: rotate(0); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes lightsRound {
+  0% {
+    -webkit-transform: rotate(0); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+/* slogan进入动画 */
+@keyframes sloganIn {
+  0% {
+    opacity: 0;
+    transform: scale(3); }
+
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@-webkit-keyframes sloganIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1); } }
+
+/* slogan动画 */
+@keyframes sloganAct {
+  0% {
+    transform: scale(1); }
+
+  70% {
+    transform: scale(1); }
+
+  80% {
+    transform: scale(0.98); }
+
+  90% {
+    transform: scale(1.1); }
+
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes sloganAct {
+  0% {
+    -webkit-transform: scale(1); }
+
+  70% {
+    -webkit-transform: scale(1); }
+
+  80% {
+    -webkit-transform: scale(0.98); }
+
+  90% {
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+/* 门出现 */
+@keyframes doorIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes doorIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+/* 小鸡一号出场动画 */
+@keyframes chickOneIn {
+  /*  60% {
+    left: 177px;
+    top: 55px;
+    transform: scale(.4);
+    opacity: 1;
+  }*/
+  0% {
+    left: 177px;
+    top: 55px;
+    transform: scale(0.4);
+    opacity: 0; }
+
+  50% {
+    left: 177px;
+    top: 55px;
+    transform: scale(0.4);
+    opacity: 1; }
+
+  100% {
+    left: 123px;
+    top: 118px;
+    transform: scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes chickOneIn {
+  /*  60% {
+    left: 177px;
+    top: 55px;
+    -webkit-transform: scale(.4);
+    opacity: 1;
+  }*/
+  0% {
+    left: 177px;
+    top: 55px;
+    -webkit-transform: scale(0.4);
+    opacity: 0; }
+
+  50% {
+    left: 177px;
+    top: 55px;
+    -webkit-transform: scale(0.4);
+    opacity: 1; }
+
+  100% {
+    left: 123px;
+    top: 118px;
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+
+/* 小鸡一号眨眼动画 */
+@keyframes chickOneEyeAct {
+  0% {
+    background: none; }
+
+  80% {
+    background: none; }
+
+  90% {
+    background: url("../img/page1-chick1-eye-closing.png") 0 0 no-repeat; }
+
+  100% {
+    background: url("../img/page1-chick1-eye-close.png") 0 0 no-repeat; } }
+
+@-webkit-keyframes chickOneEyeAct {
+  0% {
+    background: none; }
+
+  80% {
+    background: none; }
+
+  90% {
+    background: url("../img/page1-chick1-eye-closing.png") 0 0 no-repeat; }
+
+  100% {
+    background: url("../img/page1-chick1-eye-close.png") 0 0 no-repeat; } }
+
+/* 小鸡一号翅膀动画 */
+@keyframes chickOneWingsAct {
+  0% {
+    transform: translateY(0); }
+
+  60% {
+    transform: translateY(0); }
+
+  70% {
+    transform: translateY(20px); }
+
+  80% {
+    transform: translateY(0); }
+
+  90% {
+    transform: translateY(20px); }
+
+  100% {
+    transform: translateY(0); } }
+
+@-webkit-keyframes chickOneWingsAct {
+  0% {
+    -webkit-transform: translateY(0); }
+
+  60% {
+    -webkit-transform: translateY(0); }
+
+  70% {
+    -webkit-transform: translateY(20px); }
+
+  80% {
+    -webkit-transform: translateY(0); }
+
+  90% {
+    -webkit-transform: translateY(20px); }
+
+  100% {
+    -webkit-transform: translateY(0); } }
+
+/* 首屏文字出现 */
+@keyframes pageOneWordIn {
+  0% {
+    transform: scale(0); }
+
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes pageOneWordIn {
+  0% {
+    -webkit-transform: scale(0); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+/* 首屏文字动画 */
+@keyframes pageOneWordAct {
+  0% {
+    transform: rotate(0deg); }
+
+  80% {
+    transform: rotate(0deg); }
+
+  82.5% {
+    transform: rotate(20deg); }
+
+  85% {
+    transform: rotate(0deg); }
+
+  87.5% {
+    transform: rotate(-20deg); }
+
+  90% {
+    transform: rotate(0deg); }
+
+  92.5% {
+    transform: rotate(20deg); }
+
+  95% {
+    transform: rotate(0deg); }
+
+  97.5% {
+    transform: rotate(-20deg); }
+
+  100% {
+    transform: rotate(0deg); } }
+
+@-webkit-keyframes pageOneWordAct {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  80% {
+    -webkit-transform: rotate(0deg); }
+
+  82.5% {
+    -webkit-transform: rotate(20deg); }
+
+  85% {
+    -webkit-transform: rotate(0deg); }
+
+  87.5% {
+    -webkit-transform: rotate(-20deg); }
+
+  90% {
+    -webkit-transform: rotate(0deg); }
+
+  92.5% {
+    -webkit-transform: rotate(20deg); }
+
+  95% {
+    -webkit-transform: rotate(0deg); }
+
+  97.5% {
+    -webkit-transform: rotate(-20deg); }
+
+  100% {
+    -webkit-transform: rotate(0deg); } }
+
+/* 小鸡二号出场动画 */
+@keyframes chickTwoIn {
+  0% {
+    transform: translateX(-168px);
+    opacity: 1; }
+
+  66.66% {
+    transform: translateX(45px);
+    opacity: 1; }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes chickTwoIn {
+  0% {
+    -webkit-transform: translateX(-168px);
+    opacity: 1; }
+
+  66.66% {
+    -webkit-transform: translateX(45px);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1; } }
+
+/* 小鸡二号眨眼动画 */
+@keyframes chickTwoEyeAct {
+  0% {
+    background: none; }
+
+  80% {
+    background: none; }
+
+  90% {
+    background: url("../img/page1-chick3-eye-closing.png") 0 0 no-repeat; }
+
+  100% {
+    background: url("../img/page1-chick3-eye-close.png") 0 0 no-repeat; } }
+
+@-webkit-keyframes chickTwoEyeAct {
+  0% {
+    background: none; }
+
+  80% {
+    background: none; }
+
+  90% {
+    background: url("../img/page1-chick3-eye-closing.png") 0 0 no-repeat; }
+
+  100% {
+    background: url("../img/page1-chick3-eye-close.png") 0 0 no-repeat; } }
+
+/* 左侧物品进入 */
+@keyframes leftThingIn {
+  0% {
+    transform: translateX(-310px);
+    opacity: 1; }
+
+  66.66% {
+    transform: translateX(30px);
+    opacity: 1; }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes leftThingIn {
+  0% {
+    -webkit-transform: translateX(-310px);
+    opacity: 1; }
+
+  66.66% {
+    -webkit-transform: translateX(30px);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1; } }
+
+/* 小鸡三号出场动画 */
+@keyframes chickThreeIn {
+  0% {
+    transform: translateX(253px);
+    opacity: 1; }
+
+  66.66% {
+    transform: translateX(-45px);
+    opacity: 1; }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes chickThreeIn {
+  0% {
+    -webkit-transform: translateX(253px);
+    opacity: 1; }
+
+  66.66% {
+    -webkit-transform: translateX(-45px);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1; } }
+
+/* 小鸡三号眨眼动画 */
+@keyframes chickThreeEyeAct {
+  0% {
+    background: none; }
+
+  80% {
+    background: none; }
+
+  90% {
+    background: url("../img/page1-chick2-eye-closing.png") 0 0 no-repeat; }
+
+  100% {
+    background: url("../img/page1-chick2-eye-close.png") 0 0 no-repeat; } }
+
+@-webkit-keyframes chickThreeEyeAct {
+  0% {
+    background: none; }
+
+  80% {
+    background: none; }
+
+  90% {
+    background: url("../img/page1-chick2-eye-closing.png") 0 0 no-repeat; }
+
+  100% {
+    background: url("../img/page1-chick2-eye-close.png") 0 0 no-repeat; } }
+
+/* 右侧物品进入 */
+@keyframes rightThingIn {
+  0% {
+    transform: translateX(280px);
+    opacity: 1; }
+
+  66.66% {
+    transform: translateX(-26px);
+    opacity: 1; }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes rightThingIn {
+  0% {
+    -webkit-transform: translateX(280px);
+    opacity: 1; }
+
+  66.66% {
+    -webkit-transform: translateX(-26px);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1; } }
+
+/* 开始按钮进入 */
+@keyframes startBtnIn {
+  0% {
+    transform: translateY(175px); }
+
+  100% {
+    transform: translateY(0); } }
+
+@-webkit-keyframes startBtnIn {
+  0% {
+    -webkit-transform: translateY(175px); }
+
+  100% {
+    -webkit-transform: translateY(0); } }
+
+/* 开始按钮动画 */
+@keyframes startBtnAct {
+  0% {
+    transform: scale(1); }
+
+  10% {
+    transform: scale(0.6); }
+
+  20% {
+    transform: scale(1); }
+
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes startBtnAct {
+  0% {
+    -webkit-transform: scale(1); }
+
+  15% {
+    -webkit-transform: scale(0.6); }
+
+  30% {
+    -webkit-transform: scale(1); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+/* 小鸡冒头动画 */
+@keyframes chickShow5 {
+  0% {
+    transform: translateY(0); }
+
+  50% {
+    transform: translateY(-110px); }
+
+  100% {
+    transform: translateY(0); } }
+
+@-webkit-keyframes chickShow5 {
+  0% {
+    -webkit-transform: translateY(0); }
+
+  50% {
+    -webkit-transform: translateY(-110px); }
+
+  100% {
+    -webkit-transform: translateY(0); } }
+
+@keyframes chickShow1 {
+  0% {
+    transform: translateY(0); }
+
+  50% {
+    transform: translateY(-122px); }
+
+  100% {
+    transform: translateY(0); } }
+
+@-webkit-keyframes chickShow1 {
+  0% {
+    -webkit-transform: translateY(0); }
+
+  50% {
+    -webkit-transform: translateY(-122px); }
+
+  100% {
+    -webkit-transform: translateY(0); } }
+
+@keyframes chickShow0 {
+  0% {
+    transform: translateY(0); }
+
+  50% {
+    transform: translateY(-133px); }
+
+  100% {
+    transform: translateY(0); } }
+
+@-webkit-keyframes chickShow0 {
+  0% {
+    -webkit-transform: translateY(0); }
+
+  50% {
+    -webkit-transform: translateY(-133px); }
+
+  100% {
+    -webkit-transform: translateY(0); } }
+
+@keyframes ShowScore {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+
+  50% {
+    transform: scale(1.3);
+    opacity: 1; }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0; } }
+
+@-webkit-keyframes ShowScore {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+
+  50% {
+    -webkit-transform: scale(1.3);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: scale(0.8);
+    opacity: 0; } }
+
+@keyframes CountAct {
+  0% {
+    transform: translateX(-614px); }
+
+  20% {
+    transform: translateX(50px); }
+
+  40% {
+    transform: translateX(-50px); }
+
+  60% {
+    transform: translateX(0); }
+
+  80% {
+    transform: translateX(0); }
+
+  100% {
+    transform: translateX(614px); } }
+
+@-webkit-keyframes CountAct {
+  0% {
+    -webkit-transform: translateX(-614px); }
+
+  20% {
+    -webkit-transform: translateX(50px); }
+
+  40% {
+    -webkit-transform: translateX(-50px); }
+
+  60% {
+    -webkit-transform: translateX(0); }
+
+  80% {
+    -webkit-transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(614px); } }
+
+/* 获奖气泡动效 */
+@keyframes txtPaoAct {
+  0% {
+    transform: scale(1) rotate(0deg); }
+
+  12.5% {
+    transform: scale(1.1) rotate(20deg); }
+
+  25% {
+    transform: scale(1.2) rotate(0deg); }
+
+  37.5% {
+    transform: scale(1.2) rotate(-20deg); }
+
+  50% {
+    transform: scale(1.2) rotate(0deg); }
+
+  62.5% {
+    transform: scale(1.2) rotate(20deg); }
+
+  75% {
+    transform: scale(1.2) rotate(0deg); }
+
+  87.5% {
+    transform: scale(1.1) rotate(-20deg); }
+
+  100% {
+    transform: scale(1) rotate(0deg); } }
+
+@-webkit-keyframes txtPaoAct {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg); }
+
+  12.5% {
+    -webkit-transform: scale(1.1) rotate(20deg); }
+
+  25% {
+    -webkit-transform: scale(1.2) rotate(0deg); }
+
+  37.5% {
+    -webkit-transform: scale(1.2) rotate(-20deg); }
+
+  50% {
+    -webkit-transform: scale(1.2) rotate(0deg); }
+
+  62.5% {
+    -webkit-transform: scale(1.2) rotate(20deg); }
+
+  75% {
+    -webkit-transform: scale(1.2) rotate(0deg); }
+
+  87.5% {
+    -webkit-transform: scale(1.1) rotate(-20deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0deg); } }
+
+/* 金币下落 */
+@keyframes iconGoldAct {
+  0% {
+    transform: translateY(0) scale(0.7) rotateZ(0deg);
+    opacity: 1; }
+
+  99% {
+    transform: translateY(1200px) scale(0.7) rotateZ(360deg);
+    opacity: 0.3; }
+
+  100% {
+    transform: translateY(1200px) scale(0.7) rotateZ(360deg);
+    opacity: 0; } }
+
+@-webkit-keyframes iconGoldAct {
+  0% {
+    -webkit-transform: translateY(0) scale(0.7) rotateZ(0deg);
+    opacity: 1; }
+
+  99% {
+    -webkit-transform: translateY(1200px) scale(0.7) rotateZ(360deg);
+    opacity: 0.3; }
+
+  100% {
+    -webkit-transform: translateY(1200px) scale(0.7) rotateZ(360deg);
+    opacity: 0; } }
+
+/* loading圆环动画 */
+@keyframes loadingRingAct {
+  0% {
+    transform: rotateZ(0deg); }
+
+  100% {
+    transform: rotateZ(-360deg); } }
+
+@-webkit-keyframes loadingRingAct {
+  0% {
+    -webkit-transform: rotateZ(0deg); }
+
+  100% {
+    -webkit-transform: rotateZ(-360deg); } }
+
+@keyframes loadingRingAct1 {
+  0% {
+    transform: rotateZ(0deg); }
+
+  100% {
+    transform: rotateZ(360deg); } }
+
+@-webkit-keyframes loadingRingAct1 {
+  0% {
+    -webkit-transform: rotateZ(0deg); }
+
+  100% {
+    -webkit-transform: rotateZ(360deg); } }
+
+/* loading眼睛变化 */
+@keyframes loadingEyeAct1 {
+  0% {
+    transform: translateX(-26px); }
+
+  50% {
+    transform: translateX(26px); }
+
+  100% {
+    transform: translateX(-26px); } }
+
+@-webkit-keyframes loadingEyeAct1 {
+  0% {
+    -webkit-transform: translateX(-26px); }
+
+  50% {
+    -webkit-transform: translateX(26px); }
+
+  100% {
+    -webkit-transform: translateX(-26px); } }
+
+@keyframes loadingEyeAct2 {
+  0% {
+    transform: translateY(4); }
+
+  25% {
+    transform: translateY(8px); }
+
+  50% {
+    transform: translateY(4); }
+
+  75% {
+    transform: translateY(-6px); }
+
+  100% {
+    transform: translateY(4px); } }
+
+@-webkit-keyframes loadingEyeAct2 {
+  0% {
+    -webkit-transform: translateY(4); }
+
+  25% {
+    -webkit-transform: translateY(8px); }
+
+  50% {
+    -webkit-transform: translateY(4); }
+
+  75% {
+    -webkit-transform: translateY(-6px); }
+
+  100% {
+    -webkit-transform: translateY(4px); } }
+
+/* font */
+/*@font-face {
+  font-family: "FangSong";
+  src: url("../font/SIMFANG.TTF");
+}
+
+@font-face {
+  font-family: "FangSong";
+  src: url(//:) format("no404"), url("../font/SIMFANG.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}*/
+/* skin */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000; }
+
+header {
+  position: absolute;
+  left: 50%;
+  margin-left: -136px;
+  /*top: 25px;*/
+  top: 20px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: 9999em; }
+  header img {
+    width: 272px; }
+
+#henping-mask {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  z-index: 999999; }
+  #henping-mask p {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    line-height: 60px;
+    font-size: 30px; }
+
+.pageOne {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/page1-top-bg.jpg") 0 0 no-repeat; }
+  .pageOne #slogan {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    margin-left: -359px;
+    width: 717px;
+    height: 345px;
+    font-size: 0;
+    line-height: 0;
+    background: url("../img/slogan.png") 0 0 no-repeat;
+    z-index: 9999;
+    animation: sloganAct 5s linear infinite; }
+    .pageOne #slogan.in {
+      animation: sloganIn 0.6s linear;
+      -webkit-animation: sloganIn 0.6s linear; }
+    .pageOne #slogan.act {
+      animation: sloganAct 2s linear infinite;
+      -webkit-animation: sloganAct 2s linear infinite; }
+  .pageOne .lights {
+    position: absolute;
+    left: 50%;
+    bottom: 907px;
+    margin: 0 0 -645px -645px;
+    width: 1290px;
+    height: 1290px;
+    background: url("../img/lights.png") 0 0 no-repeat;
+    animation: lightsRound 6s linear infinite;
+    -webkit-animation: lightsRound 6s linear infinite; }
+  .pageOne .cloud {
+    position: absolute;
+    top: 75px;
+    width: 450px;
+    height: 129px;
+    background: url("../img/page1-cloud.png") 0 0 no-repeat;
+    animation: cloudMove 4s linear infinite alternate;
+    -webkit-animation: cloudMove 4s linear infinite alternate; }
+  .pageOne .content {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 750px;
+    height: 907px;
+    background: url("../img/page1-bottom-bg.png") 0 0 no-repeat;
+    overflow: hidden; }
+  .pageOne .door {
+    position: absolute;
+    left: 290px;
+    top: 207px;
+    width: 212px;
+    height: 302px;
+    background: url("../img/page1-door-opened.png") 0 0 no-repeat;
+    animation: doorIn 0.6s linear;
+    -webkit-animation: doorIn 0.6s linear; }
+  .pageOne .chickOne {
+    position: absolute;
+    left: 123px;
+    top: 118px;
+    width: 420px;
+    height: 526px;
+    background: url("../img/page1-chick1.png") 0 0 no-repeat;
+    opacity: 0; }
+    .pageOne .chickOne.in {
+      animation: chickOneIn 2.4s linear forwards;
+      -webkit-animation: chickOneIn 2.4s linear forwards; }
+    .pageOne .chickOne .eyes {
+      position: absolute;
+      left: 123px;
+      top: 151px;
+      width: 234px;
+      height: 81px;
+      transform: scale(1.15); }
+      .pageOne .chickOne .eyes.act {
+        animation: chickOneEyeAct 1.5s linear infinite;
+        -webkit-animation: chickOneEyeAct 1.5s linear infinite; }
+    .pageOne .chickOne .wings {
+      position: absolute;
+      left: 130px;
+      top: 295px;
+      width: 260px;
+      height: 78px;
+      background: url("../img/page1-chick1-wings.png") 0 0 no-repeat; }
+      .pageOne .chickOne .wings.act {
+        animation: chickOneWingsAct 1.5s linear infinite;
+        -webkit-animation: chickOneWingsAct 1.5s linear infinite; }
+  .pageOne .words {
+    position: absolute;
+    left: 45px;
+    top: 77px;
+    width: 218px;
+    height: 137px;
+    background: url("../img/page1-words.png") 0 0 no-repeat;
+    opacity: 0; }
+    .pageOne .words.in {
+      opacity: 1;
+      animation: pageOneWordIn 0.5s linear;
+      -webkit-animation: pageOneWordIn 0.5s linear; }
+    .pageOne .words.act {
+      opacity: 1;
+      animation: pageOneWordAct 2s linear infinite;
+      -webkit-animation: pageOneWordAct 2s linear infinite; }
+  .pageOne .chickTwo {
+    position: absolute;
+    left: 50px;
+    top: 365px;
+    width: 123px;
+    height: 200px;
+    background: url("../img/page1-chick3.png") 0 0 no-repeat;
+    opacity: 0; }
+    .pageOne .chickTwo.in {
+      animation: chickTwoIn 1.2s 1.2s linear forwards;
+      -webkit-animation: chickTwoIn 1.2s 1.2s linear forwards; }
+    .pageOne .chickTwo .eyes {
+      position: absolute;
+      left: 8px;
+      top: 62px;
+      width: 102px;
+      height: 48px; }
+      .pageOne .chickTwo .eyes.act {
+        animation: chickTwoEyeAct 1.5s 0.3s linear infinite;
+        -webkit-animation: chickTwoEyeAct 1.5s 0.3s linear infinite; }
+  .pageOne .left-things {
+    position: absolute;
+    left: -42px;
+    top: 515px;
+    width: 352px;
+    height: 296px;
+    background: url("../img/page1-left-things.png") 0 0 no-repeat;
+    opacity: 0; }
+    .pageOne .left-things.in {
+      animation: leftThingIn 1.2s 1.2s linear forwards;
+      -webkit-animation: leftThingIn 1.2s 1.2s linear forwards; }
+  .pageOne .chickThree {
+    position: absolute;
+    right: -30px;
+    top: 311px;
+    width: 283px;
+    height: 353px;
+    background: url("../img/page1-chick2.png") 0 0 no-repeat;
+    opacity: 0; }
+    .pageOne .chickThree.in {
+      animation: chickThreeIn 1.5s 1.2s linear forwards;
+      -webkit-animation: chickThreeIn 1.5s 1.2s linear forwards; }
+    .pageOne .chickThree .eyes {
+      position: absolute;
+      left: 21px;
+      top: 119px;
+      width: 130px;
+      height: 49px; }
+      .pageOne .chickThree .eyes.act {
+        animation: chickThreeEyeAct 1.5s 0.6s linear infinite;
+        -webkit-animation: chickThreeEyeAct 1.5s 0.6s linear infinite; }
+  .pageOne .right-things {
+    position: absolute;
+    right: -4px;
+    top: 636px;
+    width: 284px;
+    height: 186px;
+    background: url("../img/page1-right-things.png") 0 0 no-repeat;
+    opacity: 0; }
+    .pageOne .right-things.in {
+      animation: rightThingIn 1.2s 1.2s linear forwards;
+      -webkit-animation: rightThingIn 1.2s 1.2s linear forwards; }
+  .pageOne .start-btn {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -213px;
+    width: 427px;
+    height: 125px;
+    background: url("../img/page1-btn.png") 0 0 no-repeat;
+    font-size: 0;
+    line-height: 0;
+    transform: translateY(175px);
+    -webkit-transform: translateY(175px); }
+    .pageOne .start-btn.in {
+      animation: startBtnIn 0.3s linear forwards;
+      -webkit-animation: startBtnIn 0.3s linear forwards; }
+    .pageOne .start-btn.act {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      animation: startBtnAct 4s 1s linear infinite;
+      -webkit-animation: startBtnAct 4s 1s linear infinite; }
+
+.pageTwo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2-bg.jpg") center no-repeat; }
+  .pageTwo .score {
+    position: absolute;
+    left: 14px;
+    top: 8px;
+    font-size: 0; }
+    .pageTwo .score i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 89px;
+      height: 83px;
+      background: url("../img/icon-score.png") 0 0 no-repeat; }
+    .pageTwo .score span {
+      display: inline-block;
+      padding-left: 15px;
+      vertical-align: middle;
+      font-size: 60px;
+      color: #fccb17;
+      font-weight: bold;
+      -webkit-text-stroke: 3px #660033;
+      text-stroke: 3px #660033;
+      -webkit-text-shadow: 1px 6px 2px #999;
+      text-shadow: 1px 6px 2px #999; }
+  .pageTwo .time-count {
+    position: absolute;
+    top: 10px;
+    left: 410px;
+    font-size: 60px;
+    color: #fccb17;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #660033;
+    text-stroke: 3px #660033;
+    -webkit-text-shadow: 1px 6px 2px #999;
+    text-shadow: 1px 6px 2px #999; }
+  .pageTwo .egg {
+    position: absolute;
+    width: 227px;
+    height: 195px; }
+    .pageTwo .egg img {
+      position: absolute; }
+    .pageTwo .egg i {
+      display: none;
+      position: absolute;
+      left: 50%; }
+    .pageTwo .egg i.chick-score-5 {
+      display: block;
+      margin-left: -60px;
+      width: 121px;
+      height: 141px;
+      background: url("../img/chick-score-5.png") 0 0 no-repeat;
+      animation: chickShow5 0.8s linear forwards;
+      -webkit-animation: chickShow5 0.8s linear forwards; }
+    .pageTwo .egg i.chick-score-1 {
+      display: block;
+      margin-left: -60px;
+      width: 121px;
+      height: 153px;
+      background: url("../img/chick-score-1.png") 0 0 no-repeat;
+      animation: chickShow1 1.15s linear forwards;
+      -webkit-animation: chickShow1 1.15s linear forwards; }
+    .pageTwo .egg i.chick-score-0 {
+      display: block;
+      margin-left: -60px;
+      width: 121px;
+      height: 164px;
+      background: url("../img/chick-score-0.png") 0 0 no-repeat;
+      animation: chickShow0 1.5s linear forwards;
+      -webkit-animation: chickShow0 1.5s linear forwards; }
+    .pageTwo .egg em {
+      display: none;
+      position: absolute;
+      top: -40px;
+      right: -25px;
+      width: 70px;
+      height: 52px; }
+    .pageTwo .egg i.chick-score-0 + em.touched {
+      display: block;
+      background: url("../img/addScore.png") 0 0 no-repeat;
+      animation: chickShow0 0.5s linear forwards;
+      -webkit-animation: ShowScore 0.5s linear forwards; }
+    .pageTwo .egg i.chick-score-1 + em.touched {
+      display: block;
+      background: url("../img/addScore.png") -100px 0 no-repeat;
+      animation: chickShow0 0.5s linear forwards;
+      -webkit-animation: ShowScore 0.5s linear forwards; }
+    .pageTwo .egg i.chick-score-5 + em.touched {
+      display: block;
+      background: url("../img/addScore.png") -200px 0 no-repeat;
+      animation: chickShow0 0.5s linear forwards;
+      -webkit-animation: ShowScore 0.5s linear forwards; }
+  .pageTwo .egg1 {
+    position: absolute;
+    left: 5%;
+    top: 19%; }
+  .pageTwo .egg2 {
+    position: absolute;
+    left: 15%;
+    top: 36%; }
+  .pageTwo .egg3 {
+    position: absolute;
+    left: 20%;
+    top: 55%; }
+  .pageTwo .egg4 {
+    position: absolute;
+    left: 10%;
+    top: 75%; }
+  .pageTwo .egg5 {
+    position: absolute;
+    left: 65%;
+    top: 23%; }
+  .pageTwo .egg6 {
+    position: absolute;
+    left: 58%;
+    top: 46%; }
+  .pageTwo .egg7 {
+    position: absolute;
+    left: 60%;
+    top: 64%; }
+  .pageTwo .egg8 {
+    position: absolute;
+    left: 54%;
+    top: 81%; }
+  .pageTwo .rule-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll; }
+    .pageTwo .rule-box img {
+      display: block; }
+    .pageTwo .rule-box a {
+      display: block;
+      position: absolute;
+      top: 1165px;
+      left: 50%;
+      margin-left: -230px;
+      width: 460px;
+      height: 130px; }
+  .pageTwo .mask i {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -155px 0 0 -236px;
+    width: 473px;
+    height: 310px; }
+  .pageTwo .mask .count-start {
+    animation: CountAct 1s linear forwards;
+    -webkit-animation: CountAct 1s linear forwards;
+    background: url("../img/count-start.png") 0 0 no-repeat; }
+  .pageTwo .mask .count-three {
+    animation: CountAct 1s linear forwards;
+    -webkit-animation: CountAct 1s linear forwards;
+    background: url("../img/count-three.png") 0 0 no-repeat; }
+  .pageTwo .mask .count-two {
+    animation: CountAct 1s linear forwards;
+    -webkit-animation: CountAct 1s linear forwards;
+    background: url("../img/count-two.png") 0 0 no-repeat; }
+  .pageTwo .mask .count-one {
+    animation: CountAct 1s linear forwards;
+    -webkit-animation: CountAct 1s linear forwards;
+    background: url("../img/count-one.png") 0 0 no-repeat; }
+
+.mask {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); }
+
+.pageThree {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("../img/page3-bg.jpg") center no-repeat; }
+  .pageThree .game-fail {
+    display: none; }
+  .pageThree img {
+    display: block;
+    position: absolute; }
+
+.game-win {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .game-win .info {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 750px;
+    height: 897px;
+    background: url("../img/try-once.png") center no-repeat; }
+  .game-win p {
+    color: #df4243; }
+  .game-win .time-last {
+    position: absolute;
+    left: 550px;
+    top: 7px;
+    font-size: 48px;
+    font-weight: bold; }
+  .game-win .chance-last {
+    position: absolute;
+    top: 215px;
+    right: 610px;
+    font-size: 72px;
+    font-weight: 900; }
+  .game-win .txt-pao {
+    position: absolute;
+    display: none;
+    left: 420px;
+    top: 350px;
+    width: 306px;
+    height: 212px; }
+    .game-win .txt-pao i {
+      display: block;
+      position: absolute;
+      right: 35px;
+      top: 25px;
+      width: 150px;
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center; }
+    .game-win .txt-pao.act {
+      animation: txtPaoAct 1s linear forwards;
+      -webkit-animation: txtPaoAct 1s linear forwards; }
+  .game-win .txt-pao-zp {
+    display: block;
+    background: url("../img/txt-pao.png") 0 0 no-repeat; }
+  .game-win .txt-pao-ts {
+    display: block;
+    background: url("../img/txt-pao-2.png") 0 0 no-repeat; }
+  .game-win .btn-try {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    margin-left: -235px;
+    width: 470px;
+    height: 184px;
+    background: url("../img/btn-draw.png") 0 0 no-repeat;
+    z-index: 9; }
+  .game-win .icon-gold-1 {
+    position: absolute;
+    top: -100px;
+    width: 123px;
+    height: 123px;
+    background: url("../img/icon-gold-1.png") 0 0 no-repeat;
+    animation: iconGoldAct 1.5s linear forwards;
+    -webkit-animation: iconGoldAct 1.5s linear forwards; }
+  .game-win .icon-gold-2 {
+    position: absolute;
+    top: -100px;
+    width: 123px;
+    height: 123px;
+    background: url("../img/icon-gold-1.png") 0 0 no-repeat;
+    animation: iconGoldAct 1.5s linear forwards;
+    -webkit-animation: iconGoldAct 1.5s linear forwards; }
+  .game-win .icon-gold-3 {
+    position: absolute;
+    top: -100px;
+    width: 123px;
+    height: 123px;
+    background: url("../img/icon-gold-1.png") 0 0 no-repeat;
+    animation: iconGoldAct 1.5s linear forwards;
+    -webkit-animation: iconGoldAct 1.5s linear forwards; }
+
+.last-page {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .last-page .info {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -331px;
+    width: 662px;
+    height: 772px;
+    background: url("../img/last-page-info.png") 0 0 no-repeat; }
+    .last-page .info p {
+      position: absolute;
+      font-size: 45px;
+      color: #df4243;
+      font-weight: bold; }
+    .last-page .info .month {
+      left: 424px;
+      top: 100px; }
+    .last-page .info .day {
+      left: 535px;
+      top: 100px; }
+  .last-page .lunbo-wrapper {
+    position: absolute;
+    left: 0;
+    top: 72%;
+    width: 750px;
+    height: 62px;
+    background: rgba(24, 27, 42, 0.62);
+    overflow: hidden; }
+  .last-page .lunbo {
+    margin: 0 100px;
+    width: 550px;
+    height: 62px;
+    font-size: 30px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden; }
+    .last-page .lunbo ul {
+      width: 750px;
+      height: 62px;
+      white-space: nowrap; }
+    .last-page .lunbo li {
+      display: inline-block;
+      width: 100%;
+      height: 62px;
+      line-height: 62px;
+      text-align: center; }
+  .last-page .btns-box {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    font-size: 0;
+    text-align: center; }
+    .last-page .btns-box a {
+      display: inline-block;
+      margin: 0 20px;
+      width: 291px;
+      height: 123px; }
+    .last-page .btns-box .btn-prizes {
+      background: url("../img/btn-prizes.png") 0 0 no-repeat; }
+    .last-page .btns-box .btn-share {
+      background: url("../img/btn-share.png") 0 0 no-repeat; }
+  .last-page .btn-qrcode {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    font-size: 32px;
+    line-height: 56px;
+    color: #fff;
+    text-align: center;
+    background: rgba(24, 27, 42, 0.62);
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.3s linear; }
+    .last-page .btn-qrcode .icon-arrow {
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      margin-left: -20px;
+      width: 41px;
+      height: 11px;
+      background: url("../img/icon-arrow.png") 0 0 no-repeat; }
+    .last-page .btn-qrcode .txt2 {
+      display: none; }
+    .last-page .btn-qrcode img {
+      z-index: -1;
+      opacity: 0;
+      transform: translateY(419px);
+      -webkit-transform: translateY(419px);
+      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear; }
+  .last-page .pop-prizes {
+    display: none; }
+
+.last-page.qrcode-on .mask {
+  z-index: 9; }
+.last-page.qrcode-on .btn-qrcode {
+  z-index: 99;
+  height: 475px; }
+  .last-page.qrcode-on .btn-qrcode .txt1 {
+    display: none; }
+  .last-page.qrcode-on .btn-qrcode .txt2 {
+    display: block;
+    padding-top: 15px; }
+  .last-page.qrcode-on .btn-qrcode .icon-arrow {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); }
+  .last-page.qrcode-on .btn-qrcode img {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    z-index: 99; }
+
+.last-page.pop-prizes-on .mask {
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.9); }
+.last-page.pop-prizes-on .info {
+  display: none; }
+.last-page.pop-prizes-on .pop-prizes {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -493px 0 0 -302px;
+  width: 604px;
+  height: 986px;
+  background: url("../img/pop-prizes.png") 0 0 no-repeat;
+  z-index: 99; }
+  .last-page.pop-prizes-on .pop-prizes ul {
+    position: absolute;
+    left: 58px;
+    top: 137px;
+    width: 474px;
+    height: 595px;
+    background: #ffcb33;
+    font-size: 0;
+    overflow: auto; }
+    .last-page.pop-prizes-on .pop-prizes ul span {
+      display: inline-block;
+      margin: 2px;
+      width: 232px;
+      height: 75px;
+      background: #46323f;
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+      line-height: 75px; }
+
+.pop-bind {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999; }
+  .pop-bind div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -260px 0 0 -351px;
+    width: 702px;
+    height: 384px;
+    background: url("../img/pop-bind.png") 0 0 no-repeat; }
+  .pop-bind a {
+    display: block;
+    position: absolute;
+    left: 128px;
+    top: 160px;
+    width: 450px;
+    height: 120px; }
+
+.imgResource {
+  display: none; }
+
+.loading {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #c82d32;
+  z-index: 99999; }
+  .loading p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -54px 0 0 -47px;
+    animation: loadingRingAct 5s linear infinite;
+    -webkit-animation: loadingRingAct 5s linear infinite; }
+    .loading p i {
+      display: block;
+      position: relative;
+      left: -200px;
+      width: 94px;
+      height: 108px;
+      background: url("../img/londing-red.png") 0 0 no-repeat;
+      animation: loadingRingAct1 5s linear infinite;
+      -webkit-animation: loadingRingAct1 5s linear infinite; }
+  .loading span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -200px;
+    width: 399px;
+    height: 400px;
+    background: url("../img/londing-chick.png") 0 0 no-repeat; }
+  .loading div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -6px 0 0 -59px;
+    animation: loadingEyeAct1 5s linear infinite;
+    -webkit-animation: loadingEyeAct1 5s linear infinite; }
+    .loading div i {
+      display: block;
+      width: 114px;
+      height: 5px;
+      background: url("../img/londing-eyes.png") 0 0 no-repeat;
+      transform: translateY(3);
+      -webkit-transform: translateY(3);
+      animation: loadingEyeAct2 5s linear infinite;
+      -webkit-animation: loadingEyeAct2 5s linear infinite; }
+
+.btn-music {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  width: 79px;
+  height: 79px;
+  background: url("../img/btn-music.png") 0 0 no-repeat;
+  /*&.game {
+    left: 50%;
+    top: 8px;
+  }*/ }
+  .btn-music.on {
+    animation: loadingRingAct 4s linear infinite;
+    -webkit-animation: loadingRingAct 4s linear infinite; }
+
+.last-page .share-tip {
+  display: none; }
+
+.last-page.share-tip-on .mask {
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.9); }
+.last-page.share-tip-on .share-tip {
+  z-index: 99;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px; }
